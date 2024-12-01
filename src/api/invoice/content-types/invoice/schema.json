@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "invoices",
+  "info": {
+    "singularName": "invoice",
+    "pluralName": "invoices",
+    "displayName": "invoice",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "orders": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::order.order",
+      "mappedBy": "invoice"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "invoices"
+    },
+    "final_price": {
+      "type": "integer"
+    },
+    "shipping_cost": {
+      "type": "integer"
+    },
+    "payment_method": {
+      "type": "string"
+    },
+    "discount": {
+      "type": "integer"
+    },
+    "normal_price": {
+      "type": "integer"
+    }
+  }
+}

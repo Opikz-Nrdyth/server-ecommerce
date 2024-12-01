@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "slideshows",
+  "info": {
+    "singularName": "slideshow",
+    "pluralName": "slideshows",
+    "displayName": "slideshow",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "shorturl": {
+      "type": "string"
+    },
+    "status_show": {
+      "type": "enumeration",
+      "enum": [
+        "active",
+        "nonactive"
+      ]
+    }
+  }
+}

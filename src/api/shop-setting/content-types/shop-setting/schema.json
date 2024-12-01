@@ -1,0 +1,49 @@
+{
+  "kind": "singleType",
+  "collectionName": "shop_settings",
+  "info": {
+    "singularName": "shop-setting",
+    "pluralName": "shop-settings",
+    "displayName": "shop_setting",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "shop_name": {
+      "type": "string"
+    },
+    "shop_description": {
+      "type": "text"
+    },
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "shop_address": {
+      "type": "string"
+    },
+    "binderbyte": {
+      "type": "text"
+    },
+    "midtrans_client": {
+      "type": "string"
+    },
+    "midtrans_server": {
+      "type": "string"
+    },
+    "google_client_id": {
+      "type": "string"
+    },
+    "google_secret_id": {
+      "type": "string"
+    }
+  }
+}

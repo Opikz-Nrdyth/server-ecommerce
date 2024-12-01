@@ -1,0 +1,35 @@
+{
+  "name": "server",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A Strapi application",
+  "scripts": {
+    "build": "strapi build",
+    "deploy": "strapi deploy",
+    "dev": "strapi develop",
+    "start": "strapi start",
+    "strapi": "strapi"
+  },
+  "dependencies": {
+    "@strapi/plugin-cloud": "^5.4.1",
+    "@strapi/plugin-users-permissions": "^5.4.1",
+    "@strapi/strapi": "^5.4.1",
+    "chart.js": "^4.4.6",
+    "cors-anywhere": "^0.4.4",
+    "midtrans-client": "^1.4.2",
+    "mysql2": "^3.11.4",
+    "nodemailer": "^6.9.16",
+    "react": "^18.0.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.0.0",
+    "styled-components": "^6.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=22.x.x",
+    "npm": ">=6.0.0"
+  },
+  "strapi": {
+    "uuid": "e59f2a44-f50d-4f60-8baa-17d0cfbdaee5"
+  }
+}
