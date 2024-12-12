@@ -386,6 +386,7 @@ export interface ApiAddressAddress extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    kecamatan: Schema.Attribute.Text;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -719,16 +720,16 @@ export interface ApiShopSettingShopSetting extends Struct.SingleTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    google_client_id: Schema.Attribute.String;
-    google_secret_id: Schema.Attribute.String;
+    google_client_id: Schema.Attribute.Text;
+    google_secret_id: Schema.Attribute.Text;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::shop-setting.shop-setting'
     > &
       Schema.Attribute.Private;
-    midtrans_client: Schema.Attribute.String;
-    midtrans_server: Schema.Attribute.String;
+    midtrans_client: Schema.Attribute.Text;
+    midtrans_server: Schema.Attribute.Text;
     publishedAt: Schema.Attribute.DateTime;
     shop_address: Schema.Attribute.String;
     shop_description: Schema.Attribute.Text;

@@ -32,6 +32,9 @@
       "relation": "oneToOne",
       "target": "plugin::users-permissions.user",
       "mappedBy": "address"
+    },
+    "kecamatan": {
+      "type": "text"
     }
   }
 }

@@ -37,9 +37,10 @@ module.exports = {
         item_details: item_detail,
         enabled_payments: payment_selected,
         callbacks: {
-          finish: `${process.env.CLIENT_BASE_URL}/invoice/${orderId.replace("order-", "")}`,
+          finish: `${process.env.CLIENT_BASE_URL}/profile/myorder`,
           error: `${process.env.CLIENT_BASE_URL}`,
           pending: `${process.env.CLIENT_BASE_URL}/profile/myorder`,
+          success: `${process.env.CLIENT_BASE_URL}/invoice/${orderId.replace("order-", "")}`,
         },
       };
 

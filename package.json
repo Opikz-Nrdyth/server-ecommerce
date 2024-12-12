@@ -16,6 +16,7 @@
     "@strapi/strapi": "^5.4.1",
     "chart.js": "^4.4.6",
     "cors-anywhere": "^0.4.4",
+    "find-free-port": "^2.0.0",
     "midtrans-client": "^1.4.2",
     "mysql2": "^3.11.4",
     "nodemailer": "^6.9.16",
